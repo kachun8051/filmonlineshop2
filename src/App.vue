@@ -1,19 +1,23 @@
 <template>
-  <Header />   
-  <Section />
-  <Footer />
+  <Head />
+  <Foot />
+  <LeftMenu />
+  <Content />
+  
 </template>
 
 <script>
 //import Card from './components/Card.vue'
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
-import Section from './components/Section.vue'
+import Head from './components/Head.vue'
+import Foot from './components/Foot.vue'
+import LeftMenu from './components/LeftMenu.vue'
+import Content from './components/Content.vue'
+//import Auth2 from './components/Auth2.vue'
 
 export default {
   name: 'App',
   components: {
-    Header, Footer, Section,
+    Head, Foot, LeftMenu, Content, 
   },
   data() {
     return {
@@ -41,4 +45,11 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.authbutton {
+        margin-top: 1px;
+        margin-right: 5px;
+        position:absolute;
+        top:0;
+        right:5px;
+    }
 </style>

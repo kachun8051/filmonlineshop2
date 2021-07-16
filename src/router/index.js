@@ -5,6 +5,7 @@ import FilmList from '../views/FilmList.vue'
 import FilmListDetail from '../views/FilmListDetail.vue'
 import StaffInfo from '../views/StaffInfo.vue'
 import MyFavourite from '../views/MyFavorite.vue'
+import FilmSearchAdd from '../views/FilmSearchAdd.vue'
 
 const routes = [
   {
@@ -44,7 +45,12 @@ const routes = [
     path: '/myfavorite',
     name: 'MyFavorite',
     component: MyFavourite
-  }
+  },
+  {
+    path: '/filmsearchadd',
+    name: 'FilmSearchAdd',
+    component: FilmSearchAdd
+  },
 
 ]
 

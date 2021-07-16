@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Nav from './Nav.vue'
-import Article from './Article.vue'
+import Nav from './LeftMenu.vue'
+import Article from './Content.vue'
 
 export default {
   name: 'Section',
