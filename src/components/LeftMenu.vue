@@ -2,15 +2,13 @@
     <div id="left">
         <dl>
             <dt><router-link class="nav" to="/">Home</router-link></dt>
-            <dd>Home page</dd>
-            <dt><router-link class="nav" to="/about">About</router-link></dt>
-            <dd>About page</dd>
+            <dd>Home page</dd>            
             <dt><router-link class="nav" to="/filmlist">Film List</router-link></dt>
             <dd>Film list for display</dd>
-            <dt><router-link class="nav" to="/filmsearchadd">Film Add</router-link></dt>
-            <dd>Film is searched and Add to list</dd>
-            <dt><router-link class="nav" to="/staffinfo">Staff Info</router-link></dt>
-            <dd>Staff can edit information here</dd>            
+            <dt v-if='login'><router-link class="nav" to="/filmsearchadd">Film Add</router-link></dt>
+            <dd v-if='login'>Film is searched and Add to list</dd>
+            <dt v-if='login'><router-link class="nav" to="/staffinfo">Staff Info</router-link></dt>
+            <dd v-if='login'>Staff can edit password here</dd>            
         </dl>
         <Auth2 class="nav2" />
     </div>
@@ -20,10 +18,23 @@
 import Auth2 from './Auth2.vue'
 
 export default {
-  name: 'LeftMenu',
-  components: {
-      Auth2,
-  }
+    beforeMount() {        
+      if (localStorage.getItem('name')) {
+        this.login = true
+      }
+    },      
+    data() {
+      return {        
+        login: false,                
+        role: '',
+        authkey: '',
+        isshown: false,
+      }
+    },
+    name: 'LeftMenu',
+    components: {
+        Auth2,
+    }
 }
 </script>
 

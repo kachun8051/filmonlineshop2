@@ -94,6 +94,7 @@
             this.password = ''
             this.isshown = false
             localStorage.setItem('name', JSON.stringify(json))
+            window.location.reload()
         })
         .catch( err => {
             if (err) {
@@ -106,6 +107,7 @@
           localStorage.clear()                
             this.login = false
             this.authkey = ''
+            window.location.reload()
         }
       }
   }

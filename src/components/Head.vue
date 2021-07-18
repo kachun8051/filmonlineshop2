@@ -1,6 +1,6 @@
 <template>    
     <div id="head">            
-        
+        <h1>Film Online Shop</h1>
     </div>
 </template>
 
@@ -24,13 +24,20 @@ export default {
         display:block; 
         width:100%; 
         height:100px; 
-        background:url('../assets/filmheader2.jpg') #000; 
+        background:url('../assets/filmheader2.jpg') #000;
         background-position:0 0; 
         background-repeat:no-repeat; 
-        font-size:4em; 
+        font-size:1.8em; 
         z-index:5; 
         overflow:hidden; 
-        color:#fff;
+        color:#00F;
+        
+    }
+    h1 {
+        margin-right: 5px;
+        display: block;
+        margin-top: 5px;
+        text-align: right;
     }
 
     

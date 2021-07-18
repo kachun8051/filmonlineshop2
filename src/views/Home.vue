@@ -1,33 +1,50 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src='../assets/logo.png' />
-        <h1>Welcome to this tutorial</h1>
-        <h2 ref="subtitle">{{ fruit }}</h2>
-        <button @click="handleClick">Click me</button>
-        <Card />
-        <Card />
-        <Card />
-  </div>
+  <div class="home">    
+      <div class="columnLeft">
+        <h2>Providing up-to-date films online</h2>
+
+        <img alt="Film Anywhere" src='../assets/onlinefilmshop.jpg' />
+      </div>
+      <div class="columnRight">
+        <CurrentWeather />
+      </div>
+    </div>  
 </template>
 
-
 <script>
-import Card from '../components/Card.vue';
+import CurrentWeather from '../components/CurrentWeather.vue'
 export default {
-  name: "Article",
+  name: "Home",
   components: {
-    Card,
-  },
-  data() {
-    return {
-      fruit: "Apple",
-    };
-  },
-  methods: {
-    handleClick() {
-      console.log(this.$refs.subtitle);
-      this.$refs.subtitle.classList.add("custom-class");
-    },
+    CurrentWeather,
   },
 };
 </script>
+
+<style scoped>
+    .home {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    /* Create two columns that sits next to each other */
+    .columnLeft {
+        flex: 70%;
+        padding: 10px;
+        background-color:#aaa;
+        height: auto;
+        /* height: 300px; */ /* Should be removed. Only for demonstration */
+    }
+    .columnRight {
+        flex: 30%;
+        padding: 10px;
+        background-color:#bbb;
+        height: auto;
+    }
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        display: block;
+    }
+</style>

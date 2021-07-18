@@ -1,11 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Auth from '../views/Auth.vue'
 import FilmList from '../views/FilmList.vue'
 import FilmListDetail from '../views/FilmListDetail.vue'
-import StaffInfo from '../views/StaffInfo.vue'
-import MyFavourite from '../views/MyFavorite.vue'
 import FilmSearchAdd from '../views/FilmSearchAdd.vue'
+import StaffInfo from '../views/StaffInfo.vue'
 
 const routes = [
   {
@@ -22,11 +20,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/auth',
-    name: 'Auth',
-    component: Auth
-  },
-  {
     path: '/filmlist',
     name: 'FilmList',
     component: FilmList
@@ -40,11 +33,6 @@ const routes = [
     path: '/staffinfo',
     name: 'StaffInfo',
     component: StaffInfo
-  },
-  {
-    path: '/myfavorite',
-    name: 'MyFavorite',
-    component: MyFavourite
   },
   {
     path: '/filmsearchadd',

@@ -2,33 +2,20 @@
   <Head />
   <Foot />
   <LeftMenu />
-  <Content />
-  
+  <Content />  
 </template>
 
 <script>
-//import Card from './components/Card.vue'
+
 import Head from './components/Head.vue'
 import Foot from './components/Foot.vue'
 import LeftMenu from './components/LeftMenu.vue'
 import Content from './components/Content.vue'
-//import Auth2 from './components/Auth2.vue'
 
 export default {
   name: 'App',
   components: {
     Head, Foot, LeftMenu, Content, 
-  },
-  data() {
-    return {
-      fruit: "Apple",
-    };
-  },
-  methods: {
-    handleClick() {
-      console.log(this.$refs.subtitle);
-      this.$refs.subtitle.classList.add("custom-class")
-    }
   }
 };
 </script>
