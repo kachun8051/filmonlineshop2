@@ -62,6 +62,8 @@ Film online shop's functions are archived by different views. As corresponding r
 | Staff Password Edit | StaffInfo.vue |
 | Landing Page | Home.vue |
 
+## Video for demo
+[![Watch the demo video](https://i.imgur.com/G28nNY5.png)](https://vimeo.com/576417503/22fdefb2d3)
 
 ## License
 
