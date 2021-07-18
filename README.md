@@ -63,7 +63,7 @@ Film online shop's functions are archived by different views. As corresponding r
 | Landing Page | Home.vue |
 
 ## Video for demo
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://vimeo.com/576417503/22fdefb2d3)
+[![Watch the demo video](https://i.imgur.com/G28nNY5.png)](https://vimeo.com/576417503/22fdefb2d3)
 
 ## License
 
